@@ -632,6 +632,8 @@ code.cloudfoundry.org/go-loggregator/v9 v9.2.1 h1:S6Lgg5UJbhh2bt2TGQxs6R00CF8PrU
 code.cloudfoundry.org/go-loggregator/v9 v9.2.1/go.mod h1:FTFFruqGeOhVCDFvyLgl8EV8YW63NNwRzLhxJcporu8=
 code.cloudfoundry.org/goshims v0.38.0 h1:ai4bb1cdTbMAVFkrKwTu7ZjuwWrSIeU8CMuUonP0x+E=
 code.cloudfoundry.org/goshims v0.38.0/go.mod h1:UgJ7F+5ShYhlBWHI2h1Srt5356QUM+sd7Nui8ODFibo=
+code.cloudfoundry.org/guardian v0.0.0-20240809160425-dc7e47937fab h1:zhpYDA73BnskH4sp6k3shis6WGsCsqpaD2tl7No+Zws=
+code.cloudfoundry.org/guardian v0.0.0-20240809160425-dc7e47937fab/go.mod h1:EaIaAAfa5uKmzONuxbhKsO0ZkrnsXBzm8lV11K1DDHM=
 code.cloudfoundry.org/lager/v3 v3.0.3 h1:/UTmadZfIaKuT/whEinSxK1mzRfNu1uPfvjFfGqiwzM=
 code.cloudfoundry.org/lager/v3 v3.0.3/go.mod h1:Zn5q1SrIuuHjEUE7xerMKt3ztunrJQCZETAo7rV0CH8=
 code.cloudfoundry.org/localip v0.0.0-20240808182500-901907e2b652 h1:cnWxWjvVA8rmUaUf5tlPaIUm6oAXIItIqXFJmcqkwL0=

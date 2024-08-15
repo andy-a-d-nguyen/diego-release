@@ -7,7 +7,6 @@ toolchain go1.22.1
 replace (
 	code.cloudfoundry.org/garden => ../garden
 	code.cloudfoundry.org/grootfs => ../grootfs
-	code.cloudfoundry.org/guardian => ../guardian
 	code.cloudfoundry.org/idmapper => ../idmapper
 )
 
