@@ -828,7 +828,7 @@ github.com/mitchellh/hashstructure
 # github.com/mitchellh/ioprogress v0.0.0-20180201004757-6a23b12fa88e
 ## explicit
 github.com/mitchellh/ioprogress
-# github.com/moby/buildkit v0.15.1
+# github.com/moby/buildkit v0.15.2
 ## explicit; go 1.21.0
 github.com/moby/buildkit/frontend/dockerfile/command
 github.com/moby/buildkit/frontend/dockerfile/instructions
