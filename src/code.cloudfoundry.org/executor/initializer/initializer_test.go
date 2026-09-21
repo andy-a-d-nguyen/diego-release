@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"runtime"
 	"sync"
 	"time"
 
@@ -755,6 +756,9 @@ var _ = Describe("Initialize with the kubernetes garden client", func() {
 	)
 
 	BeforeEach(func() {
+		if runtime.GOOS != "linux" {
+			Skip("kubernetes garden client is only supported on linux")
+		}
 		logger = lagertest.NewTestLogger("test")
 		fakeMetronClient = new(mfakes.FakeIngressClient)
 		fakeClock = fakeclock.NewFakeClock(time.Now())
