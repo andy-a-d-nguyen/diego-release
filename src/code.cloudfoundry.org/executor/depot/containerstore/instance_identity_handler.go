@@ -33,16 +33,16 @@ func (h *InstanceIdentityHandler) CreateDir(logger lager.Logger, container execu
 	}
 
 	return []garden.BindMount{
-			{
-				SrcPath: containerDir,
-				DstPath: h.containerMountPath,
-				Mode:    garden.BindMountModeRO,
-				Origin:  garden.BindMountOriginHost,
-			},
-		}, []executor.EnvironmentVariable{
-			{Name: "CF_INSTANCE_CERT", Value: path.Join(h.containerMountPath, "instance.crt")},
-			{Name: "CF_INSTANCE_KEY", Value: path.Join(h.containerMountPath, "instance.key")},
-		}, nil
+		{
+			SrcPath: containerDir,
+			DstPath: h.containerMountPath,
+			Mode:    garden.BindMountModeRO,
+			Origin:  garden.BindMountOriginHost,
+		},
+	}, []executor.EnvironmentVariable{
+		{Name: "CF_INSTANCE_CERT", Value: path.Join(h.containerMountPath, "instance.crt")},
+		{Name: "CF_INSTANCE_KEY", Value: path.Join(h.containerMountPath, "instance.key")},
+	}, nil
 }
 
 func (h *InstanceIdentityHandler) RemoveDir(logger lager.Logger, container executor.Container) error {
